@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 
 export default function AboutPage() {
   const founder = teamMembers.find(m => m.designation.includes('Founder'));
-  const otherMembers = teamMembers.filter(m => !m.designation.includes('Founder'));
   const certificateImage = PlaceHolderImages.find(p => p.id === 'certificate');
 
   return (
@@ -15,7 +14,7 @@ export default function AboutPage() {
       <section className="bg-primary text-primary-foreground">
         <div className="container text-center py-16 md:py-24">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">About Ojash Welfare Society</h1>
-          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Learn about our journey, our values, and the people driving our mission forward.</p>
+          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Fighting for a future where every child is treated with dignity and respect.</p>
         </div>
       </section>
 
@@ -23,12 +22,12 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-10 md:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Story</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Story: A Stand Against Inequality</h2>
               <p className="text-muted-foreground text-lg">
-                Founded in 2010, Ojash Welfare Society started as a small initiative by a group of passionate individuals committed to making a difference in their community. What began as a weekend food drive has grown into a multi-faceted organization tackling critical issues in education, health, and empowerment.
+                Ojash Welfare Society was founded not just as an NGO, but as a response to deep-rooted social injustice. In our community, we saw children from Scheduled Castes (SC) and Scheduled Tribes (ST) facing heartbreaking discrimination. They were ostracized in their own schools—other children refused to sit with them, share meals, or even talk to them. This exclusion was robbing them of their childhood and their future.
               </p>
               <p className="text-muted-foreground text-lg">
-                Our journey has been one of collaboration, resilience, and unwavering hope. We believe in the power of community and work hand-in-hand with the people we serve, ensuring our programs are both impactful and sustainable.
+                Our founder couldn't stand by and watch. What started as personal, informal tutoring for these marginalized children has grown into a full-fledged mission. We are committed to providing a safe, inclusive, and empowering educational environment where these children can learn, grow, and reclaim the dignity they deserve. We believe every child has the right to an equal start in life.
               </p>
             </div>
             {founder && (
@@ -46,7 +45,7 @@ export default function AboutPage() {
                     data-ai-hint="founder portrait"
                   />
                   <div className="space-y-2 text-center sm:text-left">
-                    <p className="text-muted-foreground italic text-lg">"Every small act of kindness creates a ripple with no logical end. Our vision is to start a tidal wave of positive change, one life at a time."</p>
+                    <p className="text-muted-foreground italic text-lg">"We cannot build an equal future if we let some of our children start life in the shadows of discrimination. Education is the light that will guide them to a place of dignity and strength."</p>
                     <p className="font-semibold">{founder.name}, <span className="text-sm font-normal">{founder.designation}</span></p>
                   </div>
                 </CardContent>
@@ -62,22 +61,22 @@ export default function AboutPage() {
               <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                   <Goal className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
-                  <p className="text-muted-foreground">To empower marginalized communities through holistic interventions in education, health, and livelihood.</p>
+                  <p className="text-muted-foreground">To provide equal education, love, and respect to children from marginalized SC/ST communities.</p>
               </div>
               <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                   <Gem className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Our Vision</h3>
-                  <p className="text-muted-foreground">To create a society where every individual has the opportunity to achieve their full potential.</p>
+                  <p className="text-muted-foreground">A society where no child is excluded because of caste or background.</p>
               </div>
               <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                   <HandHeart className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Our Values</h3>
-                  <p className="text-muted-foreground">Compassion, Integrity, Empowerment, and Collaboration guide everything we do.</p>
+                  <p className="text-muted-foreground">Dignity, Equality, Compassion, and Empowerment guide all our actions.</p>
               </div>
               <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                 <Users className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Our Approach</h3>
-                <p className="text-muted-foreground">We believe in grassroots efforts, community participation, and sustainable solutions.</p>
+                <p className="text-muted-foreground">We focus on grassroots education, community awareness, and creating inclusive spaces.</p>
               </div>
             </div>
         </div>
@@ -123,7 +122,7 @@ export default function AboutPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Legal Status</h2>
               <p className="text-muted-foreground text-lg">
-                Ojash Welfare Society is a registered non-governmental organization under the Societies Registration Act of 1860. We are compliant with all local laws and are committed to maintaining full transparency in our operations and finances. Our registration details are available for public review.
+                Ojash Welfare Society is a registered non-governmental organization under the Societies Registration Act of 1860. We are committed to full transparency and are compliant with all local laws. Our registration details are available for public review to ensure trust and accountability.
               </p>
               <Button asChild className="rounded-full font-bold">
                 <a href={certificateImage?.imageUrl} target="_blank" rel="noopener noreferrer">

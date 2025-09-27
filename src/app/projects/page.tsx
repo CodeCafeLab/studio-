@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { projects } from '@/lib/data';
-import { AISummaryButton } from '@/components/ai-summary-button';
 import { Badge } from '@/components/ui/badge';
 import { BarChart3 } from 'lucide-react';
 
@@ -11,8 +10,8 @@ export default function ProjectsPage() {
     <>
       <section className="bg-primary text-primary-foreground">
         <div className="container text-center py-16 md:py-24">
-          <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Projects</h1>
-          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Explore our initiatives and the impact they have on communities.</p>
+          <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Programs & Activities</h1>
+          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Explore our core initiatives aimed at fostering equality and empowerment.</p>
         </div>
       </section>
 
@@ -48,7 +47,6 @@ export default function ProjectsPage() {
                         <BarChart3 className="w-4 h-4 mr-2 text-accent" />
                         <span>{project.impact}</span>
                       </div>
-                      <AISummaryButton contentToSummarize={project.description} />
                     </CardFooter>
                   </div>
                 </Card>

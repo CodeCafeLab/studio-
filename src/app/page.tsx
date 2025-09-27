@@ -5,8 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { projects, blogPosts, partners } from '@/lib/data';
-import { AISummaryButton } from '@/components/ai-summary-button';
+import { projects, blogPosts, partners, successStories } from '@/lib/data';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero');
@@ -28,21 +27,21 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 container px-4 md:px-6 space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
-              Ojash Welfare Society
+              Education & Dignity for Every Child
             </h1>
             <p className="max-w-[700px] mx-auto text-lg md:text-xl">
-              हर हाथ, एक नई उम्मीद | Every Hand, A New Hope
+              हर हाथ, एक नई उम्मीद
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-bold">
-                <Link href="/donate">
-                  Donate Now
+                <Link href="/get-involved">
+                  Support Us
                   <HeartHandshake className="ml-2" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="secondary" className="rounded-full font-bold">
-                <Link href="/get-involved">
-                  Get Involved
+                <Link href="/donate">
+                  Donate Now
                   <ArrowRight className="ml-2" />
                 </Link>
               </Button>
@@ -50,7 +49,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="mission-vision" className="bg-background">
+        <section id="our-story" className="bg-background">
+          <div className="container px-4 md:px-6 text-center">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Our Story: A Fight for Equality</h2>
+              <p className="text-muted-foreground text-lg mb-6">
+                Ojash Welfare Society was born from a painful reality: children from SC/ST communities in our area were being left behind. They faced daily discrimination, isolated from their peers who wouldn't sit, eat, or play with them. Our founder, witnessing this injustice, began personally teaching these children, offering them the support and respect they were denied. We believe in ending caste-based discrimination through the power of education.
+              </p>
+              <Button asChild>
+                <Link href="/about">
+                  Learn More About Our Journey <ArrowRight className="ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        <section id="mission-vision" className="bg-secondary/50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
               <Card className="hover:shadow-lg transition-shadow duration-300 border-0">
@@ -60,7 +75,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-lg">
-                    To create a society where every individual has the opportunity to achieve their full potential, free from the constraints of poverty and social injustice. We envision a world where compassion and collective action lead to sustainable development and empowerment for all.
+                    A society where no child is excluded because of caste or background.
                   </p>
                 </CardContent>
               </Card>
@@ -71,7 +86,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-lg">
-                    To empower marginalized communities through holistic interventions in education, health, and livelihood. We are dedicated to fostering self-reliance, promoting human rights, and creating a more equitable and inclusive society through grassroots efforts and strategic partnerships.
+                    To provide equal education, love, and respect to children from marginalized SC/ST communities.
                   </p>
                 </CardContent>
               </Card>
@@ -79,16 +94,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="bg-secondary/50">
+        <section id="programs" className="bg-background">
           <div className="container px-4 md:px-6">
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Our Projects</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Programs & Activities</h2>
               <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-                Discover the impact we're making through our diverse range of projects.
+                See how we're creating change and empowering communities.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {projects.slice(0, 4).map((project) => {
+              {projects.map((project) => {
                 const projectImage = PlaceHolderImages.find(p => p.id === project.imageId);
                 return (
                   <Card key={project.id} className="overflow-hidden group rounded-lg">
@@ -107,17 +122,53 @@ export default function Home() {
                     <CardContent className="p-6">
                       <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
                       <CardDescription className="line-clamp-3 mb-4">{project.description}</CardDescription>
-                      <div className="flex justify-between items-center">
-                        <Button asChild variant="link" className="p-0 font-bold">
+                      <Button asChild variant="link" className="p-0 font-bold">
                           <Link href="/projects">
                             Learn More <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>
                         </Button>
-                        <AISummaryButton contentToSummarize={project.description} />
-                      </div>
                     </CardContent>
                   </Card>
                 );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section id="success-stories" className="bg-secondary/50">
+          <div className="container px-4 md:px-6">
+            <div className="text-center space-y-4 mb-12">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Success Stories</h2>
+              <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+                Real stories of children who found confidence and opportunity through education.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
+              {successStories.map((story) => {
+                  const storyImage = PlaceHolderImages.find(p => p.id === story.imageId);
+                  return (
+                      <Card key={story.id} className="overflow-hidden rounded-lg">
+                          <div className="md:flex">
+                              <div className="md:w-1/3">
+                                {storyImage && (
+                                    <Image
+                                    src={storyImage.imageUrl}
+                                    alt={storyImage.description}
+                                    width={400}
+                                    height={400}
+                                    className="w-full h-full object-cover"
+                                    data-ai-hint={storyImage.imageHint}
+                                    />
+                                )}
+                              </div>
+                              <div className="md:w-2/3 p-6 flex flex-col justify-center">
+                                  <CardTitle className="text-2xl mb-2">{story.name}'s Story</CardTitle>
+                                  <CardDescription className="italic text-lg text-muted-foreground mb-4">"{story.quote}"</CardDescription>
+                                  <p className="text-sm"><span className="font-bold">{story.name}</span> {story.after}</p>
+                              </div>
+                          </div>
+                      </Card>
+                  )
               })}
             </div>
           </div>

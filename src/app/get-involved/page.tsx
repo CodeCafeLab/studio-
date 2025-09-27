@@ -8,7 +8,7 @@ export default function GetInvolvedPage() {
       <section className="bg-primary text-primary-foreground">
         <div className="container text-center py-16 md:py-24">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Get Involved</h1>
-          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Your time, skills, and passion can create a world of difference. Join us in our mission.</p>
+          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Your time, skills, and passion can help us build a world free from discrimination. Join our mission.</p>
         </div>
       </section>
 
@@ -20,7 +20,7 @@ export default function GetInvolvedPage() {
                     <CardTitle className="text-2xl">Volunteer</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground">Lend your time and skills to our projects. Whether it's teaching children, assisting in health camps, or participating in environmental drives, your contribution matters.</p>
+                    <p className="text-muted-foreground">Become a teacher or mentor. Your time and knowledge can directly impact a child's life, providing them with the support and confidence to succeed.</p>
                 </CardContent>
             </Card>
             <Card className="rounded-lg text-center">
@@ -29,7 +29,7 @@ export default function GetInvolvedPage() {
                     <CardTitle className="text-2xl">Internships</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground">Gain hands-on experience in the social sector. We offer structured internship programs for students and young professionals eager to learn and contribute.</p>
+                    <p className="text-muted-foreground">Gain hands-on experience in social work and education. We offer programs for students and professionals to contribute to our cause while learning.</p>
                 </CardContent>
             </Card>
             <Card className="rounded-lg text-center">
@@ -38,7 +38,7 @@ export default function GetInvolvedPage() {
                     <CardTitle className="text-2xl">Partnerships</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground">Collaborate with us to amplify our impact. We welcome partnerships with corporates, institutions, and other NGOs to create synergistic and sustainable change.</p>
+                    <p className="text-muted-foreground">Collaborate with us. We welcome partnerships with schools, other NGOs, and corporate entities to amplify our impact against discrimination.</p>
                 </CardContent>
             </Card>
         </div>
@@ -49,7 +49,7 @@ export default function GetInvolvedPage() {
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Register as a Volunteer</h2>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-              Fill out the form below to express your interest. Our AI assistant will review your details and send you a personalized email with next steps.
+              Fill out the form to express your interest. Our team will review your details and get in touch with the next steps to join our mission.
             </p>
           </div>
           <div className="max-w-2xl mx-auto">

@@ -1,35 +1,35 @@
 export const projects = [
   {
     id: 1,
-    title: 'Project Shiksha',
+    title: 'Free Education Classes',
     category: 'Education',
     imageId: 'project-education',
-    description: 'Project Shiksha is dedicated to providing quality education to underprivileged children in rural areas. We establish learning centers, provide educational materials, and train local teachers to create a sustainable impact on literacy and learning outcomes. Our goal is to break the cycle of poverty through education.',
-    impact: 'Reached 5,000+ children across 50 villages.'
+    description: 'We provide free, high-quality education to children from SC/ST communities who are often denied fair treatment in mainstream schools. Our classes offer a safe and inclusive space to learn and grow with dignity.',
+    impact: 'Supporting 100+ children daily.'
   },
   {
     id: 2,
-    title: 'Arogya Health Initiative',
+    title: 'Food and Nutrition Program',
     category: 'Health',
     imageId: 'project-health',
-    description: 'This initiative focuses on making healthcare accessible to remote communities. We organize regular health camps, provide free check-ups and medicines, and conduct awareness programs on hygiene and preventive care. Our mobile medical units ensure that even the most isolated families receive the care they need.',
-    impact: 'Provided healthcare to 10,000+ individuals.'
+    description: 'To ensure our students can focus on learning, we provide nutritious meals. Good health is fundamental to a good education, and this program helps our children stay healthy and active.',
+    impact: 'Serving 100+ healthy meals every day.'
   },
   {
     id: 3,
-    title: 'Nari Shakti',
-    category: 'Women Empowerment',
+    title: 'Women & Youth Empowerment',
+    category: 'Empowerment',
     imageId: 'project-women',
-    description: 'Nari Shakti aims to empower women by providing them with vocational training and financial literacy. We help women form self-help groups, start their own small businesses, and become financially independent. This program fosters confidence and leadership skills, enabling women to become change-makers in their communities.',
-    impact: 'Trained 2,000+ women in various skills.'
+    description: 'We empower mothers and young adults in the community through vocational training and financial literacy, helping create a supportive environment for our children and fostering community-wide upliftment.',
+    impact: 'Trained 50+ women and youth.'
   },
   {
     id: 4,
-    title: 'Paryavaran Mitra',
-    category: 'Environment',
+    title: 'Anti-Discrimination Campaigns',
+    category: 'Advocacy',
     imageId: 'project-environment',
-    description: 'As friends of the environment, we work on conservation and sustainability projects. Our activities include large-scale tree plantation drives, promoting waste management practices, and creating awareness about climate change. We believe in protecting our planet for future generations.',
-    impact: 'Planted over 50,000 trees.'
+    description: 'We actively run awareness campaigns to challenge and dismantle caste-based discrimination in society. Through dialogue and community engagement, we work towards a future of equality and respect for all.',
+    impact: 'Reached 5,000+ community members.'
   },
 ];
 
@@ -73,3 +73,20 @@ export const partners = [
   { id: 3, name: 'Unite for Change', imageId: 'partner-3' },
   { id: 4, name: 'People\'s Trust', imageId: 'partner-4' },
 ];
+
+export const successStories = [
+    {
+      id: 1,
+      name: 'Priya',
+      imageId: 'success-story-1',
+      quote: "Before, I was afraid to speak in school. Now, I love learning and have many friends.",
+      after: "is now a confident student who excels in her studies and participates actively in class."
+    },
+    {
+      id: 2,
+      name: 'Ravi',
+      imageId: 'success-story-2',
+      quote: "I used to feel alone. Here, I feel like I have a family that supports me.",
+      after: "has found a supportive community and is developing his passion for science."
+    }
+  ];
