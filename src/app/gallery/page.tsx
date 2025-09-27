@@ -40,7 +40,7 @@ export default function GalleryPage() {
                     </CardFooter>
                   </Card>
                 </DialogTrigger>
-                <DialogContent className="max-w-3xl">
+                <DialogContent className="max-w-3xl p-2">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
