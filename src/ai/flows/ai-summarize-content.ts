@@ -40,7 +40,21 @@ const summarizeContentFlow = ai.defineFlow(
     outputSchema: SummarizeContentOutputSchema,
   },
   async input => {
-    const {output} = await summarizeContentPrompt(input);
-    return output!;
+    const maxRetries = 3;
+    let attempt = 0;
+    while (attempt < maxRetries) {
+      try {
+        const {output} = await summarizeContentPrompt(input);
+        return output!;
+      } catch (error) {
+        attempt++;
+        if (attempt >= maxRetries) {
+          throw error;
+        }
+        await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
+      }
+    }
+    // This part should be unreachable, but typescript needs a return path.
+    throw new Error('Summarization failed after multiple retries.');
   }
 );
