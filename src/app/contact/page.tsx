@@ -28,7 +28,7 @@ export default function ContactPage() {
                             <MapPin className="w-6 h-6 text-primary mt-1"/>
                             <div>
                                 <h3 className="font-semibold">Our Office</h3>
-                                <p className="text-muted-foreground">123 Hope Street, Bandikui, Dausa, India</p>
+                                <p className="text-muted-foreground">Greta bhgwan shiv colony gudha road Bandikui Dausa</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -42,7 +42,7 @@ export default function ContactPage() {
                             <Phone className="w-6 h-6 text-primary mt-1"/>
                             <div>
                                 <h3 className="font-semibold">Call Us</h3>
-                                <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 123 456 7890</a>
+                                <a href="tel:+919511355744" className="text-muted-foreground hover:text-primary transition-colors">+91 95113 55744</a>
                             </div>
                         </div>
                     </div>

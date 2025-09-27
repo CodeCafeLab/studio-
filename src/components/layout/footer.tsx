@@ -50,9 +50,9 @@ export function Footer() {
           <div className="space-y-2">
             <h4 className="font-bold">Contact Us</h4>
             <address className="not-italic text-sm space-y-1">
-              <p>123 Hope Street, Bandikui, Dausa</p>
+              <p>Greta bhgwan shiv colony gudha road Bandikui Dausa</p>
               <p>Email: <a href="mailto:info@ojash.org" className="hover:underline">info@ojash.org</a></p>
-              <p>Phone: <a href="tel:+911234567890" className="hover:underline">+91 123 456 7890</a></p>
+              <p>Phone: <a href="tel:+919511355744" className="hover:underline">+91 95113 55744</a></p>
             </address>
           </div>
         </div>
