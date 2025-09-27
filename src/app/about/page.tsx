@@ -14,7 +14,8 @@ export default function AboutPage() {
       <section className="bg-primary text-primary-foreground">
         <div className="container text-center py-16 md:py-24">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">About Ojash Welfare Society</h1>
-          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Fighting for a future where every child is treated with dignity and respect.</p>
+          <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Empowering children through education in Bandikui (Dausa)</p>
+          <p className="max-w-3xl mx-auto mt-2 text-lg md:text-xl">Reg. COOP/2024/DAUSA/500207</p>
         </div>
       </section>
 
@@ -22,12 +23,12 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-10 md:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Story: A Stand Against Inequality</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Story: Empowering Through Education</h2>
               <p className="text-muted-foreground text-lg">
-                Ojash Welfare Society was founded not just as an NGO, but as a response to deep-rooted social injustice. In our community, we saw children from Scheduled Castes (SC) and Scheduled Tribes (ST) facing heartbreaking discrimination. They were ostracized in their own schools—other children refused to sit with them, share meals, or even talk to them. This exclusion was robbing them of their childhood and their future.
+                Ojash Welfare Society was established in Bandikui (Dausa) with a mission to provide quality education and support to underprivileged children. We recognized that many children in our community lacked access to proper educational resources and opportunities for development.
               </p>
               <p className="text-muted-foreground text-lg">
-                Our founder couldn't stand by and watch. What started as personal, informal tutoring for these marginalized children has grown into a full-fledged mission. We are committed to providing a safe, inclusive, and empowering educational environment where these children can learn, grow, and reclaim the dignity they deserve. We believe every child has the right to an equal start in life.
+                Our organization actively works to distribute educational materials, provide warm clothing during winter, and create a nurturing environment where children can learn and grow. With our motto "हर हाथ, एक नई उम्मीद" (Every Hand, A New Hope), we're committed to ensuring that every child has the opportunity to build a brighter future through education.
               </p>
             </div>
             {founder && (

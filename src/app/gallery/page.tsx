@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from '@/components/ui/dialog';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function GalleryPage() {
@@ -41,6 +41,7 @@ export default function GalleryPage() {
                   </Card>
                 </DialogTrigger>
                 <DialogContent className="max-w-3xl p-2">
+                  <DialogTitle className="sr-only">{image.description}</DialogTitle>
                   <Image
                     src={image.imageUrl}
                     alt={image.description}

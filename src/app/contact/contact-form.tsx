@@ -16,20 +16,13 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { contactAction } from './actions';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
   email: z.string().email('Invalid email address.'),
   message: z.string().min(10, 'Message must be at least 10 characters.'),
 });
-
-async function contactAction(data: z.infer<typeof formSchema>) {
-  'use server';
-  // In a real application, you would handle the form submission here,
-  // e.g., send an email, save to a database, etc.
-  console.log('Contact form submitted:', data);
-  return { success: true, message: 'Your message has been sent successfully!' };
-}
 
 export function ContactForm() {
   const { toast } = useToast();

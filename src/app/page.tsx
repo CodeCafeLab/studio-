@@ -27,10 +27,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 container px-4 md:px-6 space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
-              Education & Dignity for Every Child
+              OJASH WELFARE SOCIETY
             </h1>
             <p className="max-w-[700px] mx-auto text-lg md:text-xl">
-              हर हाथ, एक नई उम्मीद
+              हर हाथ, एक नई उम्मीद | Every Hand, A New Hope
+            </p>
+            <p className="max-w-[700px] mx-auto text-lg md:text-xl mt-2">
+              Empowering children through education in Bandikui (Dausa)
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-bold">
@@ -52,9 +55,9 @@ export default function Home() {
         <section id="our-story" className="bg-background">
           <div className="container px-4 md:px-6 text-center">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Our Story: A Fight for Equality</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Our Story: Empowering Through Education</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Ojash Welfare Society was born from a painful reality: children from SC/ST communities in our area were being left behind. They faced daily discrimination, isolated from their peers who wouldn't sit, eat, or play with them. Our founder, witnessing this injustice, began personally teaching these children, offering them the support and respect they were denied. We believe in ending caste-based discrimination through the power of education.
+                Established in Bandikui (Dausa), Ojash Welfare Society (Reg. COOP/2024/DAUSA/500207) is dedicated to providing quality education and support to underprivileged children. Our organization distributes educational materials, warm clothing, and creates a nurturing environment where every child can thrive regardless of their background. With the motto "हर हाथ, एक नई उम्मीद" (Every Hand, A New Hope), we're committed to building a brighter future for the children in our community.
               </p>
               <Button asChild>
                 <Link href="/about">
@@ -75,7 +78,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-lg">
-                    A society where no child is excluded because of caste or background.
+                    A society where every child has access to quality education and equal opportunities for growth and development.
                   </p>
                 </CardContent>
               </Card>
@@ -86,7 +89,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-lg">
-                    To provide equal education, love, and respect to children from marginalized SC/ST communities.
+                    To empower underprivileged children through education, provide essential supplies, and create a supportive environment for their holistic development.
                   </p>
                 </CardContent>
               </Card>

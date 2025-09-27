@@ -2,33 +2,33 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Group of happy children from SC/ST communities studying together",
-      "imageUrl": "https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGNoaWxkcmVufGVufDB8fHx8MTc1ODg3OTc2NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Indian children studying"
+      "description": "Ojash Welfare Society - Empowering children through education",
+      "imageUrl": "/images/IMG-20250927-WA0001.jpg",
+      "imageHint": "Ojash children studying"
     },
     {
       "id": "project-education",
-      "description": "Child learning in an inclusive classroom environment",
-      "imageUrl": "https://images.unsplash.com/photo-1602542164986-edc061d9c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGlsZCUyMGNsYXNzcm9vbXxlbnwwfHx8fDE3NTg5NzQxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "child classroom"
+      "description": "Children learning at Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0014.jpg",
+      "imageHint": "Ojash education program"
     },
     {
       "id": "project-health",
-      "description": "Children eating a nutritious meal provided by the NGO",
-      "imageUrl": "https://images.unsplash.com/photo-1662923447979-0c89ef9f2fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDB8fHx8MTc1ODg5OTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "food distribution"
+      "description": "Children receiving support from Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0015.jpg",
+      "imageHint": "Ojash support program"
     },
     {
       "id": "project-women",
-      "description": "Group of women from the community learning vocational skills",
-      "imageUrl": "https://images.unsplash.com/photo-1528129550655-5123a0cd0c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21lbiUyMGVtcG93ZXJtZW50fGVufDB8fHx8MTc1ODk2MDA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "women empowerment"
+      "description": "Community engagement at Ojash Welfare Society",
+      "imageUrl": "/images/WhatsApp Image 2025-09-27 at 16.44.31_7ac7bccc.jpg",
+      "imageHint": "Ojash community program"
     },
     {
       "id": "project-environment",
-      "description": "Community members participating in an awareness campaign against discrimination",
-      "imageUrl": "https://images.unsplash.com/photo-1654868537177-86c35bb6b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NTg5MzY5MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community awareness"
+      "description": "Community members participating in Ojash Welfare Society activities",
+      "imageUrl": "/images/IMG-20250927-WA0001.jpg",
+      "imageHint": "Ojash community activities"
     },
     {
       "id": "success-story-1",
@@ -44,27 +44,27 @@
     },
     {
       "id": "team-member-1",
-      "description": "Professional portrait of a female team member",
-      "imageUrl": "https://images.unsplash.com/photo-1593351799227-75df2026356b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODk3MzQ2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Professional portrait of a team member from Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0010.jpg",
+      "imageHint": "Ojash team member"
     },
     {
       "id": "team-member-2",
-      "description": "Professional portrait of a male team member",
-      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg5NTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "description": "Professional portrait of a team member from Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0011.jpg",
+      "imageHint": "Ojash team member"
     },
     {
       "id": "team-member-3",
-      "description": "Professional portrait of a team member",
-      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg5MDE5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
+      "description": "Professional portrait of a team member from Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0012.jpg",
+      "imageHint": "Ojash team member"
     },
     {
       "id": "founder",
-      "description": "Portrait of the dignified founder of the NGO",
-      "imageUrl": "https://images.unsplash.com/photo-1749755417263-dc2af6f6bc52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb3VuZGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU4OTYyMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "founder portrait"
+      "description": "Portrait of the founder of Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0013.jpg",
+      "imageHint": "Ojash founder"
     },
     {
       "id": "certificate",
@@ -74,45 +74,59 @@
     },
     {
       "id": "gallery-1",
-      "description": "Children learning together in a classroom",
-      "imageUrl": "https://images.unsplash.com/photo-1654868537177-86c35bb6b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NTg5MzY5MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "learning together",
-      "caption": "Learning Together"
+      "description": "Children studying at Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0002.jpg",
+      "imageHint": "Ojash children studying",
+      "caption": "Education for All"
     },
     {
       "id": "gallery-2",
-      "description": "Children smiling and breaking social barriers",
-      "imageUrl": "https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlsZHJlbiUyMHBsYXlpbmd8ZW58MHx8fHwxNzU4OTU0NzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "children smiling",
-      "caption": "Breaking Barriers"
+      "description": "Children reading educational materials at Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0003.jpg",
+      "imageHint": "Ojash children reading",
+      "caption": "Nurturing Young Minds"
     },
     {
       "id": "gallery-3",
-      "description": "Children showing hope for the future",
-      "imageUrl": "https://images.unsplash.com/photo-1616680214429-d79397e56688?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dm9sdW50ZWVycyUyMHdvcmtpbmd8ZW58MHx8fHwxNzU4OTIxODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hopeful children",
-      "caption": "Smiles of Hope"
+      "description": "Group of children engaged in learning activities",
+      "imageUrl": "/images/IMG-20250927-WA0004.jpg",
+      "imageHint": "Ojash children group",
+      "caption": "Learning Together"
     },
     {
       "id": "gallery-4",
-      "description": "Volunteers distributing food packages to needy people",
-      "imageUrl": "https://images.unsplash.com/photo-1662923447979-0c89ef9f2fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDB8fHx8MTc1ODg5OTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "food distribution",
-      "caption": "Community Nutrition"
+      "description": "Blanket distribution to children by Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0005.jpg",
+      "imageHint": "Ojash blanket distribution",
+      "caption": "Warmth and Care for All"
     },
     {
       "id": "gallery-5",
-      "description": "A doctor attending to patients at a free health camp",
-      "imageUrl": "https://images.unsplash.com/photo-1621439719573-1cb632e212c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWFsdGglMjBjYW1wfGVufDB8fHx8MTc1ODk3NDEyNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "health camp",
-      "caption": "Access to Healthcare"
+      "description": "Ojash Welfare Society community outreach program",
+      "imageUrl": "/images/IMG-20250927-WA0006.jpg",
+      "imageHint": "Ojash community outreach",
+      "caption": "Reaching Out to Communities"
     },
     {
       "id": "gallery-6",
-      "description": "A group of people participating in a cultural event",
-      "imageUrl": "https://images.unsplash.com/photo-1666960383210-e83a1c287ab6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0cmVlJTIwcGxhbnRhdGlvbnxlbnwwfHx8fDE3NTg5MTU3NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cultural event",
-      "caption": "Celebrating Together"
+      "description": "Educational activities at Ojash Welfare Society",
+      "imageUrl": "/images/IMG-20250927-WA0007.jpg",
+      "imageHint": "Ojash educational activities",
+      "caption": "Empowering Through Education"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Children participating in educational activities",
+      "imageUrl": "/images/IMG-20250927-WA0008.jpg",
+      "imageHint": "Ojash educational activities",
+      "caption": "Learning and Growing Together"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Community engagement and support activities",
+      "imageUrl": "/images/IMG-20250927-WA0009.jpg",
+      "imageHint": "Ojash community support",
+      "caption": "Building a Supportive Community"
     },
     {
       "id": "qr-code",
