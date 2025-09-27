@@ -55,7 +55,7 @@ export function Header() {
                     {link.label}
                   </Link>
                 ))}
-                 <Button asChild size="lg" className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setMenuOpen(false)}>
+                 <Button asChild size="lg" className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-bold" onClick={() => setMenuOpen(false)}>
                   <Link href="/donate">
                     Donate Now <HeartHandshake className="ml-2" />
                   </Link>
@@ -82,7 +82,7 @@ export function Header() {
         </nav>
 
         <div className="hidden flex-1 items-center justify-end gap-4 md:flex">
-          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-bold">
             <Link href="/donate">
               Donate Now <HeartHandshake className="ml-2" />
             </Link>

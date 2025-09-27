@@ -9,7 +9,7 @@ export default function BlogPage() {
     <>
       <section className="bg-primary text-primary-foreground">
         <div className="container text-center py-16 md:py-24">
-          <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Blog</h1>
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Blog</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Stay updated with our latest news, success stories, and impact articles.</p>
         </div>
       </section>
@@ -20,7 +20,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => {
               const postImage = PlaceHolderImages.find(p => p.id === post.imageId);
               return (
-                <Card key={post.id} className="flex flex-col overflow-hidden group transition-shadow hover:shadow-xl">
+                <Card key={post.id} className="flex flex-col overflow-hidden group transition-shadow hover:shadow-xl rounded-lg">
                   {postImage && (
                     <CardHeader className="p-0">
                       <Image
@@ -35,7 +35,7 @@ export default function BlogPage() {
                   )}
                   <CardContent className="p-6 flex-grow">
                     <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
-                    <CardTitle className="font-headline text-2xl mb-3">{post.title}</CardTitle>
+                    <CardTitle className="text-2xl mb-3">{post.title}</CardTitle>
                     <CardDescription>{post.summary}</CardDescription>
                   </CardContent>
                   <CardFooter className="p-6 pt-0">

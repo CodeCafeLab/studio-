@@ -28,9 +28,9 @@ export function DonationTabs() {
       </TabsList>
       
       <TabsContent value="online">
-        <Card>
+        <Card className="rounded-lg">
           <CardHeader>
-            <CardTitle className="font-headline">Online Payment</CardTitle>
+            <CardTitle>Online Payment</CardTitle>
             <CardDescription>Securely donate using your card or other online methods.</CardDescription>
           </CardHeader>
           <CardContent>
@@ -47,16 +47,16 @@ export function DonationTabs() {
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" placeholder="jane.doe@example.com" required />
               </div>
-              <Button type="submit" className="w-full">Proceed to Payment</Button>
+              <Button type="submit" className="w-full rounded-full font-bold bg-accent hover:bg-accent/90">Proceed to Payment</Button>
             </form>
           </CardContent>
         </Card>
       </TabsContent>
 
       <TabsContent value="bank">
-        <Card>
+        <Card className="rounded-lg">
           <CardHeader>
-            <CardTitle className="font-headline">Direct Bank Transfer</CardTitle>
+            <CardTitle>Direct Bank Transfer</CardTitle>
             <CardDescription>You can donate directly to our bank account using the details below.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -67,15 +67,16 @@ export function DonationTabs() {
               <p><strong>IFSC Code:</strong> SBIN0001234</p>
               <p><strong>Branch:</strong> New Delhi Main Branch</p>
             </div>
-            <Button onClick={handleDonation} className="w-full">I Have Donated</Button>
+            <p className="text-sm text-muted-foreground">After making the transfer, please click the button below so we can acknowledge your contribution.</p>
+            <Button onClick={handleDonation} className="w-full rounded-full font-bold bg-accent hover:bg-accent/90">I Have Donated</Button>
           </CardContent>
         </Card>
       </TabsContent>
 
       <TabsContent value="upi">
-        <Card>
+        <Card className="rounded-lg">
           <CardHeader>
-            <CardTitle className="font-headline">UPI / QR Code</CardTitle>
+            <CardTitle>UPI / QR Code</CardTitle>
             <CardDescription>Scan the QR code with any UPI app to donate instantly.</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col items-center space-y-4">
@@ -90,7 +91,8 @@ export function DonationTabs() {
               />
             )}
             <p className="font-semibold text-center">UPI ID: ojash.ngo@upi</p>
-            <Button onClick={handleDonation} className="w-full">I Have Donated</Button>
+            <p className="text-sm text-muted-foreground">After donating, click below to confirm.</p>
+            <Button onClick={handleDonation} className="w-full rounded-full font-bold bg-accent hover:bg-accent/90">I Have Donated</Button>
           </CardContent>
         </Card>
       </TabsContent>

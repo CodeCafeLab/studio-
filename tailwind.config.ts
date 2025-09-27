@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Alegreya', 'serif'],
-        headline: ['Belleza', 'sans-serif'],
+        body: ['Open Sans', 'sans-serif'],
+        headline: ['Montserrat', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
