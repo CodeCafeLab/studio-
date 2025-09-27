@@ -1,3 +1,154 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Group of happy children in a rural setting",
+      "imageUrl": "https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGNoaWxkcmVufGVufDB8fHx8MTc1ODg3OTc2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy children"
+    },
+    {
+      "id": "project-education",
+      "description": "Child learning in a classroom with a teacher's help",
+      "imageUrl": "https://images.unsplash.com/photo-1602542164986-edc061d9c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGlsZCUyMGNsYXNzcm9vbXxlbnwwfHx8fDE3NTg5NzQxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child classroom"
+    },
+    {
+      "id": "project-health",
+      "description": "Doctor examining a child at a medical camp",
+      "imageUrl": "https://images.unsplash.com/photo-1758691462119-792279713969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBjaGlsZHxlbnwwfHx8fDE3NTg5NzQxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor child"
+    },
+    {
+      "id": "project-women",
+      "description": "Group of women learning a vocational skill like sewing",
+      "imageUrl": "https://images.unsplash.com/photo-1528129550655-5123a0cd0c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21lbiUyMGVtcG93ZXJtZW50fGVufDB8fHx8MTc1ODk2MDA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "women empowerment"
+    },
+    {
+      "id": "project-environment",
+      "description": "Volunteers planting tree saplings in a field",
+      "imageUrl": "https://images.unsplash.com/photo-1597868165956-03a6827955b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGxhbnRpbmclMjB0cmVlc3xlbnwwfHx8fDE3NTg5MTc4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "planting trees"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Professional portrait of a female team member",
+      "imageUrl": "https://images.unsplash.com/photo-1593351799227-75df2026356b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODk3MzQ2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Professional portrait of a male team member",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg5NTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Professional portrait of a team member",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg5MDE5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "founder",
+      "description": "Portrait of the dignified founder of the NGO",
+      "imageUrl": "https://images.unsplash.com/photo-1749755417263-dc2af6f6bc52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb3VuZGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU4OTYyMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "founder portrait"
+    },
+    {
+      "id": "certificate",
+      "description": "Official NGO registration certificate document",
+      "imageUrl": "https://images.unsplash.com/photo-1559588501-59a118c47e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc1ODg3NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document certificate"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Community event with many people gathered",
+      "imageUrl": "https://images.unsplash.com/photo-1654868537177-86c35bb6b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NTg5MzY5MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community event"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Children happily playing together outdoors",
+      "imageUrl": "https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlsZHJlbiUyMHBsYXlpbmd8ZW58MHx8fHwxNzU4OTU0NzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "children playing"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Volunteers actively working together on a project",
+      "imageUrl": "https://images.unsplash.com/photo-1616680214429-d79397e56688?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dm9sdW50ZWVycyUyMHdvcmtpbmd8ZW58MHx8fHwxNzU4OTIxODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "volunteers working"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Volunteers distributing food packages to needy people",
+      "imageUrl": "https://images.unsplash.com/photo-1662923447979-0c89ef9f2fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDB8fHx8MTc1ODg5OTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "food distribution"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A doctor attending to patients at a free health camp",
+      "imageUrl": "https://images.unsplash.com/photo-1621439719573-1cb632e212c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWFsdGglMjBjYW1wfGVufDB8fHx8MTc1ODk3NDEyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "health camp"
+    },
+    {
+      "id": "gallery-6",
+      "description": "A group of people participating in a tree plantation drive",
+      "imageUrl": "https://images.unsplash.com/photo-1666960383210-e83a1c287ab6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0cmVlJTIwcGxhbnRhdGlvbnxlbnwwfHx8fDE3NTg5MTU3NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tree plantation"
+    },
+    {
+      "id": "qr-code",
+      "description": "Sample UPI QR code for donations",
+      "imageUrl": "https://images.unsplash.com/photo-1662383729882-e03ce8e00887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxciUyMGNvZGV8ZW58MHx8fHwxNzU4ODkzNjc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "qr code"
+    },
+    {
+      "id": "map",
+      "description": "A map showing the location of the NGO office in a city",
+      "imageUrl": "https://images.unsplash.com/photo-1717343824623-06293a62a70d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbWFwfGVufDB8fHx8MTc1ODg3ODE1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    },
+    {
+      "id": "blog-1",
+      "description": "A child who has benefited from the NGO's educational program",
+      "imageUrl": "https://images.unsplash.com/photo-1694499377697-f21e1da42b8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdWNjZXNzJTIwc3Rvcnl8ZW58MHx8fHwxNzU4OTc0MTI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "success story"
+    },
+    {
+      "id": "blog-2",
+      "description": "An overview of a community that has been positively impacted",
+      "imageUrl": "https://images.unsplash.com/photo-1758599668280-317754ffe1aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tdW5pdHklMjBpbXBhY3R8ZW58MHx8fHwxNzU4OTc0MTI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community impact"
+    },
+    {
+      "id": "blog-3",
+      "description": "A graphic or photo representing future plans and goals",
+      "imageUrl": "https://images.unsplash.com/photo-1645353353724-09f4df22b007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmdXR1cmUlMjBwbGFuc3xlbnwwfHx8fDE3NTg5NzQxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "future plans"
+    },
+    {
+      "id": "partner-1",
+      "description": "Logo of a corporate partner",
+      "imageUrl": "https://images.unsplash.com/photo-1687523327554-fa9f50423489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg4ODE5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "partner-2",
+      "description": "Logo of a brand sponsor",
+      "imageUrl": "https://images.unsplash.com/photo-1617727553252-65863c156eb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmFuZCUyMGxvZ298ZW58MHx8fHwxNzU4OTQxMjc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brand logo"
+    },
+    {
+      "id": "partner-3",
+      "description": "Logo of a corporate foundation",
+      "imageUrl": "https://images.unsplash.com/photo-1554774853-d50f9c681ae2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb3Jwb3JhdGUlMjBsb2dvfGVufDB8fHx8MTc1ODkyNDQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate logo"
+    },
+    {
+      "id": "partner-4",
+      "description": "Logo of a philanthropic foundation",
+      "imageUrl": "https://images.unsplash.com/photo-1709873582570-4f17d43921d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmb3VuZGF0aW9uJTIwbG9nb3xlbnwwfHx8fDE3NTg5NzQxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "foundation logo"
+    }
+  ]
 }
