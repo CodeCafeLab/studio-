@@ -76,9 +76,9 @@ export function ThankYouClient() {
           {status === 'error' && 'We sincerely appreciate your donation, even though we had trouble generating a special note.'}
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="flex flex-col items-center">
         {status === 'generating' && (
-          <div className="space-y-3 text-left">
+          <div className="space-y-3 text-left w-full">
             <Skeleton className="h-4 w-[80%]" />
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-4 w-[90%]" />
@@ -86,13 +86,13 @@ export function ThankYouClient() {
           </div>
         )}
         {(status === 'done' || status === 'error') && (
-            <div className="text-left bg-muted/50 p-4 rounded-md space-y-4">
+            <div className="text-left bg-muted/50 p-4 rounded-md space-y-4 w-full">
                 <p className='italic'>{thankYouNote || 'Your donation is a beacon of hope for many. We are incredibly grateful for your support and for believing in our mission. Together, we can create a world where every hand brings new hope.'}</p>
                 <p className='font-semibold'>With heartfelt thanks,</p>
                 <p className='font-semibold'>The Team at Ojash Welfare Society</p>
             </div>
         )}
-         <Button asChild className="mt-6">
+         <Button asChild className="mt-6 w-full sm:w-auto">
             <Link href="/">Back to Home</Link>
           </Button>
       </CardContent>

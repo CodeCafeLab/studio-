@@ -16,7 +16,7 @@ export default function DonatePage() {
       <section id="donation-impact" className="bg-secondary/50">
         <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12">How Your Donation Helps</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
                 <Card className="text-center rounded-lg">
                     <CardHeader className="items-center">
                         <BookOpen className="w-12 h-12 text-primary mb-4" />
