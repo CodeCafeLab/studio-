@@ -4,6 +4,7 @@ import { summarizeContent as summarizeContentFlow, SummarizeContentInput } from 
 import { generateThankYouNote as generateThankYouNoteFlow } from '@/ai/flows/thank-you-note-on-donation';
 import { z } from 'zod';
 
+// Schema definitions moved to non-exported constants
 const summarizeSchema = z.object({
   content: z.string().min(10, "Content is too short to summarize."),
 });
@@ -16,6 +17,7 @@ export async function summarizeContent(input: SummarizeContentInput) {
   return await summarizeContentFlow(parsed.data);
 }
 
+// Schema definition as non-exported constant
 const thankYouSchema = z.object({
     donorName: z.string(),
     donationAmount: z.number(),
