@@ -83,39 +83,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="team">
-        <div className="container px-4 md:px-6">
-          <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Our Team</h2>
-            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-              The dedicated individuals working tirelessly behind the scenes to make a difference.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
-            {teamMembers.map(member => {
-              const memberImage = PlaceHolderImages.find(p => p.id === member.imageId);
-              return (
-                <div key={member.id} className="text-center space-y-3">
-                  {memberImage && (
-                    <Image
-                      src={memberImage.imageUrl}
-                      alt={`Portrait of ${member.name}`}
-                      width={200}
-                      height={200}
-                      className="rounded-full object-cover mx-auto aspect-square shadow-lg"
-                      data-ai-hint={memberImage.imageHint}
-                    />
-                  )}
-                  <div className="space-y-1">
-                    <h4 className="font-semibold text-lg">{member.name}</h4>
-                    <p className="text-sm text-primary font-medium">{member.designation}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
       
       <section id="legal" className="bg-secondary/50">
         <div className="container px-4 md:px-6">

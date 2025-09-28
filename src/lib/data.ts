@@ -78,14 +78,14 @@ export const successStories = [
     {
       id: 1,
       name: 'Priya',
-      imageId: 'success-story-1',
+      imageId: 'gallery-1',
       quote: "Before, I was afraid to speak in school. Now, I love learning and have many friends.",
       after: "is now a confident student who excels in her studies and participates actively in class."
     },
     {
       id: 2,
       name: 'Ravi',
-      imageId: 'success-story-2',
+      imageId: 'gallery-2',
       quote: "I used to feel alone. Here, I feel like I have a family that supports me.",
       after: "has found a supportive community and is developing his passion for science."
     }

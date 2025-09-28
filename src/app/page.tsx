@@ -154,14 +154,19 @@ export default function Home() {
                           <div className="md:flex">
                               <div className="md:w-1/3">
                                 {storyImage && (
+                                  <div>
                                     <Image
-                                    src={storyImage.imageUrl}
-                                    alt={storyImage.description}
-                                    width={400}
-                                    height={400}
-                                    className="w-full h-full object-cover"
-                                    data-ai-hint={storyImage.imageHint}
+                                      src={storyImage.imageUrl}
+                                      alt={storyImage.description}
+                                      width={400}
+                                      height={400}
+                                      className="w-full h-full object-cover"
+                                      data-ai-hint={storyImage.imageHint}
                                     />
+                                    <p className="text-xs text-muted-foreground p-2 text-center">
+                                      {storyImage.caption ?? storyImage.description}
+                                    </p>
+                                  </div>
                                 )}
                               </div>
                               <div className="md:w-2/3 p-6 flex flex-col justify-center">
