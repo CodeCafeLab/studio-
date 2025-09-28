@@ -234,20 +234,14 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
-              {partners.map(partner => {
-                const partnerImage = PlaceHolderImages.find(p => p.id === partner.imageId);
-                return partnerImage ? (
-                  <Image
-                    key={partner.id}
-                    src={partnerImage.imageUrl}
-                    alt={partner.name}
-                    width={150}
-                    height={75}
-                    className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                    data-ai-hint={partnerImage.imageHint}
-                  />
-                ) : null;
-              })}
+              {partners.map(partner => (
+                <div 
+                  key={partner.id}
+                  className="text-xl font-medium px-6 py-3 bg-background rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                >
+                  {partner.name}
+                </div>
+              ))}
             </div>
           </div>
         </section>

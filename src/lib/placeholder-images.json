@@ -1,6 +1,18 @@
 {
   "placeholderImages": [
     {
+      "id": "logo",
+      "description": "Ojash Welfare Society Logo",
+      "imageUrl": "/images/ojash pdf_page-0001.jpg",
+      "imageHint": "Ojash logo"
+    },
+    {
+      "id": "certificate",
+      "description": "Ojash Welfare Society Registration Certificate",
+      "imageUrl": "/images/WhatsApp Image 2025-09-28 at 08.07.38_8063a9cd.jpg",
+      "imageHint": "Ojash certificate"
+    },
+    {
       "id": "hero",
       "description": "Ojash Welfare Society - Empowering children through education",
       "imageUrl": "/images/IMG-20250927-WA0001.jpg",

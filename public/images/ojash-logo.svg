@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="240" fill="#0077a2"/>
+  <circle cx="250" cy="250" r="180" fill="#f9f5d7"/>
+  
+  <!-- Text around the circle -->
+  <path id="textPath" d="M250,30 A220,220 0 1,1 249.9,30" fill="none"/>
+  <text fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    <textPath href="#textPath" startOffset="5%">OJASH WELFARE SOCIETY</textPath>
+  </text>
+  
+  <path id="bottomTextPath" d="M250,470 A220,220 0 0,1 249.9,470" fill="none"/>
+  <text fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    <textPath href="#bottomTextPath" startOffset="35%">BANDIKUI</textPath>
+  </text>
+  
+  <!-- Registration number -->
+  <text x="250" y="430" fill="#000000" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Reg. COOP/2024/DAUSA/500207</text>
+  
+  <!-- People around globe -->
+  <g transform="translate(250, 250)">
+    <!-- Globe in center -->
+    <circle cx="0" cy="0" r="40" fill="#3d8eb9"/>
+    <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#206b45" stroke-width="2"/>
+    <path d="M-40,0 Q0,-15 40,0 Q0,15 -40,0" fill="#206b45"/>
+    <path d="M0,-40 Q15,0 0,40 Q-15,0 0,-40" fill="#206b45"/>
+    
+    <!-- People figures -->
+    <!-- Orange figures -->
+    <g fill="#e67e22">
+      <circle cx="0" cy="-80" r="15"/>
+      <circle cx="57" cy="-57" r="15"/>
+      <circle cx="80" cy="0" r="15"/>
+      <circle cx="57" cy="57" r="15"/>
+    </g>
+    
+    <!-- Brown figures -->
+    <g fill="#8b4513">
+      <circle cx="0" cy="80" r="15"/>
+      <circle cx="-57" cy="57" r="15"/>
+      <circle cx="-80" cy="0" r="15"/>
+      <circle cx="-57" cy="-57" r="15"/>
+    </g>
+  </g>
+  
+  <!-- Wheat stalks -->
+  <g transform="translate(60, 250) rotate(-90)">
+    <path d="M0,0 C10,-20 20,-10 20,-30 C20,-10 30,-20 30,-40 C30,-20 40,-30 40,-50 C40,-30 50,-40 50,-60" 
+          stroke="#e6c06e" fill="none" stroke-width="3"/>
+    <path d="M0,0 L50,-60 L55,-55 L5,5 Z" fill="#e6c06e"/>
+    <path d="M10,-20 L15,-18 M20,-30 L25,-28 M30,-40 L35,-38 M40,-50 L45,-48" 
+          stroke="#e6c06e" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(440, 250) rotate(90)">
+    <path d="M0,0 C10,-20 20,-10 20,-30 C20,-10 30,-20 30,-40 C30,-20 40,-30 40,-50 C40,-30 50,-40 50,-60" 
+          stroke="#e6c06e" fill="none" stroke-width="3"/>
+    <path d="M0,0 L50,-60 L55,-55 L5,5 Z" fill="#e6c06e"/>
+    <path d="M10,-20 L15,-18 M20,-30 L25,-28 M30,-40 L35,-38 M40,-50 L45,-48" 
+          stroke="#e6c06e" stroke-width="2"/>
+  </g>
+</svg>

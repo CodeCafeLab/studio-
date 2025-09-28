@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#f5f5f5"/>
+  <rect x="50" y="50" width="700" height="900" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  
+  <!-- Indian Emblem -->
+  <g transform="translate(400, 120) scale(0.5)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#000000" stroke-width="2"/>
+    <path d="M-30,-20 L30,-20 L0,30 Z" fill="#000000"/>
+    <path d="M-40,-30 L40,-30 M-40,-25 L40,-25 M-40,-15 L40,-15 M-40,-10 L40,-10" stroke="#000000" stroke-width="2"/>
+  </g>
+  
+  <!-- Header Text -->
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">राजस्थान सरकार</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">सहकारिता विभाग / COOPERATIVE DEPARTMENT</text>
+  
+  <!-- Certificate Title -->
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">रजिस्ट्रीकरण प्रमाण - पत्र / REGISTRATION CERTIFICATE</text>
+  
+  <!-- Registration Details -->
+  <text x="150" y="320" font-family="Arial, sans-serif" font-size="16">पं. संख्या / REG. NO.- COOP/2024/DAUSA/500207</text>
+  <text x="650" y="320" font-family="Arial, sans-serif" font-size="16" text-anchor="end">दिनांक / DATE:- 07-03-2025</text>
+  
+  <!-- Certificate Content -->
+  <text x="100" y="380" font-family="Arial, sans-serif" font-size="16">यह प्रमाणित किया जाता है कि OJASH WELFARE SOCIETY BANDIKUI जिला DAUSA का रजिस्ट्रेशन 'राजस्थान</text>
+  <text x="100" y="410" font-family="Arial, sans-serif" font-size="16">सोसाइटीज रजिस्ट्रेशन एक्ट, 1958 ( राजस्थान एक्ट नंबर 28, 1958 )' के अंतर्गत आज किया गया है। यह प्रमाण पत्र मेरे</text>
+  <text x="100" y="440" font-family="Arial, sans-serif" font-size="16">डिजिटल हस्ताक्षर से आज जारी किया गया है।</text>
+  
+  <text x="100" y="500" font-family="Arial, sans-serif" font-size="16">IT IS CERTIFIED THAT OJASH WELFARE SOCIETY BANDIKUI AT DISTRICT DAUSA IS REGISTERED UNDER 'THE</text>
+  <text x="100" y="530" font-family="Arial, sans-serif" font-size="16">RAJASTHAN SOCIETIES REGISTRATION ACT, 1958 ( RAJASTHAN ACT NO. 28, 1958 )'. THIS CERTIFICATE IS</text>
+  <text x="100" y="560" font-family="Arial, sans-serif" font-size="16">ISSUED TODAY UNDER MY DIGITAL SIGNATURE.</text>
+  
+  <!-- QR Codes -->
+  <rect x="100" y="600" width="100" height="100" fill="#000000"/>
+  <rect x="600" y="700" width="80" height="80" fill="#000000"/>
+  
+  <!-- Signature Section -->
+  <text x="600" y="650" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Signature Not Verified</text>
+  <text x="600" y="680" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Digitally signed by Ramswaroop Sindhu</text>
+  <text x="600" y="700" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Designation : REGISTRAR</text>
+  <text x="600" y="720" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Date: 2025.03.07 11:39:34 IST</text>
+  <text x="600" y="740" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Reason: Approved</text>
+  <text x="600" y="760" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Location: Dausa</text>
+</svg>
