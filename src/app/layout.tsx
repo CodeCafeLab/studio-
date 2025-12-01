@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Ojash Digital Uplift',
+  title: 'OJASH WELFARE Digital Uplift',
   description: 'हर हाथ, एक नई उम्मीद | Every Hand, A New Hope',
 };
 

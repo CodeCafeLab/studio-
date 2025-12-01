@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Newspaper, HeartHandshake, Lightbulb, Target } from 'lucide-react';
@@ -6,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { projects, blogPosts, partners, successStories } from '@/lib/data';
+import Gallery from '@/components/Gallery';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero');
@@ -57,7 +59,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Our Story: Empowering Through Education</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Established in Bandikui (Dausa), Ojash Welfare Society (Reg. COOP/2024/DAUSA/500207) is dedicated to providing quality education and support to underprivileged children. Our organization distributes educational materials, warm clothing, and creates a nurturing environment where every child can thrive regardless of their background. With the motto "हर हाथ, एक नई उम्मीद" (Every Hand, A New Hope), we're committed to building a brighter future for the children in our community.
+                Established in Bandikui (Dausa), OJASH WELFARE Society (Reg. COOP/2024/DAUSA/500207) is dedicated to providing quality education and support to underprivileged children. Our organization distributes educational materials, warm clothing, and creates a nurturing environment where every child can thrive regardless of their background. With the motto "हर हाथ, एक नई उम्मीद" (Every Hand, A New Hope), we're committed to building a brighter future for the children in our community.
               </p>
               <Button asChild>
                 <Link href="/about">
@@ -99,7 +101,7 @@ export default function Home() {
 
         <section id="programs" className="bg-background">
           <div className="container px-4 md:px-6">
-            <div className="text-center space-y-4 mb-12">
+            <div className="text-center space-y-4 mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Programs & Activities</h2>
               <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
                 See how we're creating change and empowering communities.
@@ -138,9 +140,11 @@ export default function Home() {
           </div>
         </section>
 
+        <Gallery />
+
         <section id="success-stories" className="bg-secondary/50">
           <div className="container px-4 md:px-6">
-            <div className="text-center space-y-4 mb-12">
+            <div className="text-center space-y-4 mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Success Stories</h2>
               <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
                 Real stories of children who found confidence and opportunity through education.
@@ -184,7 +188,7 @@ export default function Home() {
 
         <section id="news" className="bg-background">
           <div className="container px-4 md:px-6">
-            <div className="text-center space-y-4 mb-12">
+            <div className="text-center space-y-4 mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Latest News & Events</h2>
               <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
                 Stay updated with our recent activities and stories of change.
@@ -192,37 +196,34 @@ export default function Home() {
             </div>
             <Carousel opts={{ align: "start", loop: true }} className="w-full max-w-5xl mx-auto">
               <CarouselContent>
-                {blogPosts.map((post) => {
-                  const postImage = PlaceHolderImages.find(p => p.id === post.imageId);
-                  return (
-                    <CarouselItem key={post.id} className="md:basis-1/2 lg:basis-1/3">
-                      <div className="p-1">
-                        <Card className="h-full rounded-lg">
-                          <CardContent className="flex flex-col items-start p-6">
-                            {postImage && (
-                              <Image
-                                src={postImage.imageUrl}
-                                alt={postImage.description}
-                                width={600}
-                                height={400}
-                                className="w-full h-40 object-cover rounded-md mb-4"
-                                data-ai-hint={postImage.imageHint}
-                              />
-                            )}
-                            <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
-                            <CardTitle className="text-lg mb-2 line-clamp-2">{post.title}</CardTitle>
-                            <CardDescription className="line-clamp-3 mb-4">{post.summary}</CardDescription>
-                            <Button asChild variant="default" className="rounded-full font-bold">
-                              <Link href={`/blog`}>
+                {blogPosts.slice(0, 3).map((post) => (
+                  <CarouselItem key={post.id} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
+                      <Card className="h-full rounded-lg overflow-hidden group">
+                        <CardContent className="flex flex-col items-start p-0">
+                          <div className="relative w-full h-48 overflow-hidden">
+                            <Image
+                              src={post.image}
+                              alt={post.title}
+                              fill
+                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                          <div className="p-6 space-y-3">
+                            <p className="text-sm text-muted-foreground">{post.date}</p>
+                            <CardTitle className="text-lg line-clamp-2">{post.title}</CardTitle>
+                            <CardDescription className="line-clamp-3">{post.summary}</CardDescription>
+                            <Button asChild variant="default" className="rounded-full font-bold mt-2">
+                              <Link href="/blog">
                                 Read More <Newspaper className="ml-2 h-4 w-4" />
                               </Link>
                             </Button>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </CarouselItem>
-                  );
-                })}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
@@ -232,7 +233,7 @@ export default function Home() {
 
         <section id="partners" className="bg-secondary/50">
           <div className="container px-4 md:px-6">
-            <div className="text-center space-y-4 mb-12">
+            <div className="text-center space-y-4 mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Our Partners & Supporters</h2>
               <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
                 We are grateful for the support of our partners who make our work possible.

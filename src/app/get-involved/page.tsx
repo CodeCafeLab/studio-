@@ -6,7 +6,7 @@ export default function GetInvolvedPage() {
   return (
     <>
       <section className="bg-primary text-primary-foreground">
-        <div className="container text-center py-16 md:py-24">
+        <div className="container text-center py-10 md:py-14">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Get Involved</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Your time, skills, and passion can help us build a world free from discrimination. Join our mission.</p>
         </div>
@@ -46,7 +46,7 @@ export default function GetInvolvedPage() {
 
       <section id="volunteer-form-section" className="bg-secondary/50">
         <div className="container px-4 md:px-6">
-          <div className="text-center space-y-4 mb-12">
+          <div className="text-center space-y-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Register as a Volunteer</h2>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
               Fill out the form to express your interest. Our team will review your details and get in touch with the next steps to join our mission.

@@ -56,7 +56,7 @@
     @apply bg-background text-foreground;
   }
   section {
-    @apply w-full py-12 md:py-24 lg:py-32;
+    @apply w-full py-8 md:py-12 lg:py-16;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline font-bold;

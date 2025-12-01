@@ -2,18 +2,16 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { teamMembers } from '@/lib/data';
-import { Download, Users, Goal, Gem, HandHeart } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Users, Goal, Gem, HandHeart } from 'lucide-react';
 
 export default function AboutPage() {
   const founder = teamMembers.find(m => m.designation.includes('Founder'));
-  const certificateImage = PlaceHolderImages.find(p => p.id === 'certificate');
 
   return (
     <>
       <section className="bg-primary text-primary-foreground">
-        <div className="container text-center py-16 md:py-24">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">About Ojash Welfare Society</h1>
+        <div className="container text-center py-10 md:py-14">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">About OJASH WELFARE Society</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Empowering children through education in Bandikui (Dausa)</p>
           <p className="max-w-3xl mx-auto mt-2 text-lg md:text-xl">Reg. COOP/2024/DAUSA/500207</p>
         </div>
@@ -25,7 +23,7 @@ export default function AboutPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Story: Empowering Through Education</h2>
               <p className="text-muted-foreground text-lg">
-                Ojash Welfare Society was established in Bandikui (Dausa) with a mission to provide quality education and support to underprivileged children. We recognized that many children in our community lacked access to proper educational resources and opportunities for development.
+                OJASH WELFARE Society was established in Bandikui (Dausa) with a mission to provide quality education and support to underprivileged children. We recognized that many children in our community lacked access to proper educational resources and opportunities for development.
               </p>
               <p className="text-muted-foreground text-lg">
                 Our organization actively works to distribute educational materials, provide warm clothing during winter, and create a nurturing environment where children can learn and grow. With our motto "हर हाथ, एक नई उम्मीद" (Every Hand, A New Hope), we're committed to ensuring that every child has the opportunity to build a brighter future through education.
@@ -86,30 +84,15 @@ export default function AboutPage() {
       
       <section id="legal" className="bg-secondary/50">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-10 md:grid-cols-2 lg:gap-16 items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Legal Status</h2>
-              <p className="text-muted-foreground text-lg">
-                Ojash Welfare Society is a registered non-governmental organization under the Societies Registration Act of 1860. We are committed to full transparency and are compliant with all local laws. Our registration details are available for public review to ensure trust and accountability.
-              </p>
-              <Button asChild className="rounded-full font-bold">
-                <a href={certificateImage?.imageUrl} target="_blank" rel="noopener noreferrer">
-                  View Certificate <Download className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Legal Status</h2>
+            <p className="text-muted-foreground text-lg">
+              OJASH WELFARE Society is a registered non-governmental organization under the Societies Registration Act of 1860. We are committed to full transparency and are compliant with all local laws.
+            </p>
+            <div className="bg-background rounded-lg p-6 shadow-sm inline-block">
+              <p className="text-sm text-muted-foreground mb-1">Registration Number</p>
+              <p className="text-2xl font-bold text-primary">COOP/2024/DAUSA/500207</p>
             </div>
-            {certificateImage && (
-              <div className="flex justify-center">
-                <Image
-                  src={certificateImage.imageUrl}
-                  alt={certificateImage.description}
-                  width={300}
-                  height={400}
-                  className="rounded-lg shadow-lg object-contain"
-                  data-ai-hint={certificateImage.imageHint}
-                />
-              </div>
-            )}
           </div>
         </div>
       </section>

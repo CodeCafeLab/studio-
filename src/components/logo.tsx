@@ -10,7 +10,7 @@ export function Logo() {
       {logoImage && (
         <Image 
           src={logoImage.imageUrl} 
-          alt="Ojash Welfare Society Logo" 
+          alt="OJASH WELFARE Society Logo" 
           width={40} 
           height={40} 
           className="rounded-full"
@@ -18,7 +18,7 @@ export function Logo() {
         />
       )}
       <span className="text-xl font-bold">
-        Ojash
+        OJASH WELFARE
       </span>
     </Link>
   );

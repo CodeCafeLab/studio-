@@ -62,7 +62,7 @@ export function DonationTabs() {
           <CardContent className="space-y-4">
             <div className="text-sm space-y-2 p-4 bg-muted/50 rounded-md">
               <p><strong>Bank Name:</strong> State Bank of India</p>
-              <p><strong>Account Name:</strong> Ojash Welfare Society</p>
+              <p><strong>Account Name:</strong> OJASH WELFARE Society</p>
               <p><strong>Account Number:</strong> 12345678901</p>
               <p><strong>IFSC Code:</strong> SBIN0001234</p>
               <p><strong>Branch:</strong> New Delhi Main Branch</p>

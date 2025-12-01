@@ -52,12 +52,12 @@ export function Footer() {
             <address className="not-italic text-sm space-y-1">
               <p>Greta bhgwan shiv colony gudha road Bandikui Dausa</p>
               <p>Email: <a href="mailto:info@ojash.org" className="hover:underline">info@ojash.org</a></p>
-              <p>Phone: <a href="tel:+919511355744" className="hover:underline">+91 95113 55744</a></p>
+              <p>Phone: <a href="tel:+91 96804 04555" className="hover:underline">+91 96804 04555</a></p>
             </address>
           </div>
         </div>
         <div className="mt-8 border-t pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Ojash Welfare Society. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} OJASH WELFARE Society. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

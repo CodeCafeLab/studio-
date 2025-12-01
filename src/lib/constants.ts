@@ -1,6 +1,7 @@
 export const NAV_LINKS = [
   // Home and About Us pages hidden as requested
   { href: '/projects', label: 'Projects' },
+  { href: '/events', label: 'Events' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/get-involved', label: 'Get Involved' },
   { href: '/blog', label: 'Blog' },
