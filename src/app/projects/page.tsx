@@ -9,7 +9,7 @@ export default function ProjectsPage() {
   return (
     <>
       <section className="bg-primary text-primary-foreground">
-        <div className="container text-center py-16 md:py-24">
+        <div className="container text-center py-10 md:py-14">
           <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Programs & Activities</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Explore our core initiatives aimed at fostering equality and empowerment.</p>
         </div>

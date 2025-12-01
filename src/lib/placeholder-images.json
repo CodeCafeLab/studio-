@@ -2,45 +2,45 @@
   "placeholderImages": [
     {
       "id": "logo",
-      "description": "Ojash Welfare Society Logo",
+      "description": "OJASH WELFARE Society Logo",
       "imageUrl": "/images/ojash pdf_page-0001.jpg",
-      "imageHint": "Ojash logo"
+      "imageHint": "OJASH WELFARE logo"
     },
     {
       "id": "certificate",
-      "description": "Ojash Welfare Society Registration Certificate",
+      "description": "OJASH WELFARE Society Registration Certificate",
       "imageUrl": "/images/WhatsApp Image 2025-09-28 at 08.07.38_8063a9cd.jpg",
-      "imageHint": "Ojash certificate"
+      "imageHint": "OJASH WELFARE certificate"
     },
     {
       "id": "hero",
-      "description": "Ojash Welfare Society - Empowering children through education",
+      "description": "OJASH WELFARE Society - Empowering children through education",
       "imageUrl": "/images/IMG-20250927-WA0001.jpg",
-      "imageHint": "Ojash children studying"
+      "imageHint": "OJASH WELFARE children studying"
     },
     {
       "id": "project-education",
-      "description": "Children learning at Ojash Welfare Society",
+      "description": "Children learning at OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0014.jpg",
-      "imageHint": "Ojash education program"
+      "imageHint": "OJASH WELFARE education program"
     },
     {
       "id": "project-health",
-      "description": "Children receiving support from Ojash Welfare Society",
+      "description": "Children receiving support from OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0015.jpg",
-      "imageHint": "Ojash support program"
+      "imageHint": "OJASH WELFARE support program"
     },
     {
       "id": "project-women",
-      "description": "Community engagement at Ojash Welfare Society",
+      "description": "Community engagement at OJASH WELFARE Society",
       "imageUrl": "/images/WhatsApp Image 2025-09-27 at 16.44.31_7ac7bccc.jpg",
-      "imageHint": "Ojash community program"
+      "imageHint": "OJASH WELFARE community program"
     },
     {
       "id": "project-environment",
-      "description": "Community members participating in Ojash Welfare Society activities",
+      "description": "Community members participating in OJASH WELFARE Society activities",
       "imageUrl": "/images/IMG-20250927-WA0001.jpg",
-      "imageHint": "Ojash community activities"
+      "imageHint": "OJASH WELFARE community activities"
     },
     {
       "id": "success-story-1",
@@ -56,27 +56,27 @@
     },
     {
       "id": "team-member-1",
-      "description": "Professional portrait of a team member from Ojash Welfare Society",
+      "description": "Professional portrait of a team member from OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0010.jpg",
-      "imageHint": "Ojash team member"
+      "imageHint": "OJASH WELFARE team member"
     },
     {
       "id": "team-member-2",
-      "description": "Professional portrait of a team member from Ojash Welfare Society",
+      "description": "Professional portrait of a team member from OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0011.jpg",
-      "imageHint": "Ojash team member"
+      "imageHint": "OJASH WELFARE team member"
     },
     {
       "id": "team-member-3",
-      "description": "Professional portrait of a team member from Ojash Welfare Society",
+      "description": "Professional portrait of a team member from OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0012.jpg",
-      "imageHint": "Ojash team member"
+      "imageHint": "OJASH WELFARE team member"
     },
     {
       "id": "founder",
-      "description": "Portrait of the founder of Ojash Welfare Society",
+      "description": "Portrait of the founder of OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0013.jpg",
-      "imageHint": "Ojash founder"
+      "imageHint": "OJASH WELFARE founder"
     },
     {
       "id": "certificate",
@@ -86,58 +86,58 @@
     },
     {
       "id": "gallery-1",
-      "description": "Children studying at Ojash Welfare Society",
+      "description": "Children studying at OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0002.jpg",
-      "imageHint": "Ojash children studying",
+      "imageHint": "OJASH WELFARE children studying",
       "caption": "Education for All"
     },
     {
       "id": "gallery-2",
-      "description": "Children reading educational materials at Ojash Welfare Society",
+      "description": "Children reading educational materials at OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0003.jpg",
-      "imageHint": "Ojash children reading",
+      "imageHint": "OJASH WELFARE children reading",
       "caption": "Nurturing Young Minds"
     },
     {
       "id": "gallery-3",
       "description": "Group of children engaged in learning activities",
       "imageUrl": "/images/IMG-20250927-WA0004.jpg",
-      "imageHint": "Ojash children group",
+      "imageHint": "OJASH WELFARE children group",
       "caption": "Learning Together"
     },
     {
       "id": "gallery-4",
-      "description": "Blanket distribution to children by Ojash Welfare Society",
+      "description": "Blanket distribution to children by OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0005.jpg",
-      "imageHint": "Ojash blanket distribution",
+      "imageHint": "OJASH WELFARE blanket distribution",
       "caption": "Warmth and Care for All"
     },
     {
       "id": "gallery-5",
-      "description": "Ojash Welfare Society community outreach program",
+      "description": "OJASH WELFARE Society community outreach program",
       "imageUrl": "/images/IMG-20250927-WA0006.jpg",
-      "imageHint": "Ojash community outreach",
+      "imageHint": "OJASH WELFARE community outreach",
       "caption": "Reaching Out to Communities"
     },
     {
       "id": "gallery-6",
-      "description": "Educational activities at Ojash Welfare Society",
+      "description": "Educational activities at OJASH WELFARE Society",
       "imageUrl": "/images/IMG-20250927-WA0007.jpg",
-      "imageHint": "Ojash educational activities",
+      "imageHint": "OJASH WELFARE educational activities",
       "caption": "Empowering Through Education"
     },
     {
       "id": "gallery-7",
       "description": "Children participating in educational activities",
       "imageUrl": "/images/IMG-20250927-WA0008.jpg",
-      "imageHint": "Ojash educational activities",
+      "imageHint": "OJASH WELFARE educational activities",
       "caption": "Learning and Growing Together"
     },
     {
       "id": "gallery-8",
       "description": "Community engagement and support activities",
       "imageUrl": "/images/IMG-20250927-WA0009.jpg",
-      "imageHint": "Ojash community support",
+      "imageHint": "OJASH WELFARE community support",
       "caption": "Building a Supportive Community"
     },
     {

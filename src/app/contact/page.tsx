@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="bg-primary text-primary-foreground">
-        <div className="container text-center py-16 md:py-24">
+        <div className="container text-center py-10 md:py-14">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Contact Us</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">We'd love to hear from you. Whether you have a question, a proposal, or just want to say hello, feel free to reach out.</p>
         </div>

@@ -27,7 +27,7 @@ export function ThankYouClient() {
           const result = await generateThankYouNote({
             donorName: 'Valued Supporter',
             donationAmount: 500,
-            ngoName: 'Ojash Welfare Society',
+            ngoName: 'OJASH WELFARE Society',
           });
           setThankYouNote(result.thankYouNote);
           setStatus('done');
@@ -89,7 +89,7 @@ export function ThankYouClient() {
             <div className="text-left bg-muted/50 p-4 rounded-md space-y-4 w-full">
                 <p className='italic'>{thankYouNote || 'Your donation is a beacon of hope for many. We are incredibly grateful for your support and for believing in our mission. Together, we can create a world where every hand brings new hope.'}</p>
                 <p className='font-semibold'>With heartfelt thanks,</p>
-                <p className='font-semibold'>The Team at Ojash Welfare Society</p>
+                <p className='font-semibold'>The Team at OJASH WELFARE Society</p>
             </div>
         )}
          <Button asChild className="mt-6 w-full sm:w-auto">

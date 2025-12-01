@@ -9,7 +9,7 @@ export default function GalleryPage() {
   return (
     <>
       <section className="bg-primary text-primary-foreground">
-        <div className="container text-center py-16 md:py-24">
+        <div className="container text-center py-10 md:py-14">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Our Gallery</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">A glimpse into our world of action, compassion, and change. These are real photos from our events and classes.</p>
         </div>
@@ -17,7 +17,7 @@ export default function GalleryPage() {
 
       <section id="image-gallery">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12">Photo Gallery</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8">Photo Gallery</h2>
           <div 
             className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4"
           >

@@ -7,7 +7,7 @@ export default function DonatePage() {
   return (
     <>
       <section className="bg-primary text-primary-foreground">
-        <div className="container text-center py-16 md:py-24">
+        <div className="container text-center py-10 md:py-14">
           <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl">Make a Donation</h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg md:text-xl">Your small contribution can give a child dignity and education. Every donation, big or small, makes a difference.</p>
         </div>
@@ -15,7 +15,7 @@ export default function DonatePage() {
 
       <section id="donation-impact" className="bg-secondary/50">
         <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12">How Your Donation Helps</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8">How Your Donation Helps</h2>
             <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
                 <Card className="text-center rounded-lg">
                     <CardHeader className="items-center">
