@@ -4,14 +4,14 @@ import { useState } from "react";
 import Image from "next/image";
 import { blogPosts } from '@/lib/data';
 import { BlogCard } from '@/components/BlogCard';
-import { BookOpen, Sparkles, ZoomIn, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { BookOpen, Sparkles, ZoomIn, X, ChevronLeft, ChevronRight, Newspaper, Heart, Users } from "lucide-react";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
+import Link from "next/link";
 
 export default function BlogPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  // Collect all images for gallery highlights
   const allGalleryImages = blogPosts.flatMap((post) => 
     post.summaryImages.slice(0, 2).map((img) => ({
       src: img,
@@ -30,50 +30,68 @@ export default function BlogPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center bg-gradient-to-br from-slate-900 via-primary/90 to-slate-800 text-primary-foreground overflow-hidden">
-        {/* Background Pattern */}
+      {/* Hero Section - Light Theme */}
+      <section className="relative min-h-[50vh] flex items-center bg-gradient-to-b from-[#E5F6FF] to-white overflow-hidden">
+        {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-white/10 rounded-full blur-[100px]" />
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-500/20 rounded-full blur-[80px]" />
-          <div className="absolute top-1/3 left-1/4 w-4 h-4 bg-yellow-400 rounded-full animate-bounce delay-300" />
-          <div className="absolute bottom-1/3 right-1/4 w-3 h-3 bg-green-400 rounded-full animate-bounce delay-500" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#F4B400]/10 rounded-full blur-[100px]" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#005A9C]/10 rounded-full blur-[120px]" />
         </div>
 
-        <div className="container relative z-10 text-center py-12 md:py-16">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full mb-8">
-            <BookOpen className="h-4 w-4" />
-            <span className="text-sm font-medium">Stories of Hope & Impact</span>
+        <div className="container relative z-10 text-center py-16 md:py-20">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white border border-[#005A9C]/20 px-6 py-3 rounded-full shadow-sm mb-8 animate-fade-in">
+            <Newspaper className="h-4 w-4 text-[#F4B400]" />
+            <span className="text-sm font-medium text-[#005A9C]">Stories of Hope & Impact</span>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6">
-            Our{" "}
-            <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
-              Blog
-            </span>
+
+          {/* Title - Centered */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-center text-[#005A9C] mb-6 animate-fade-in-up">
+            Our <span className="text-[#F4B400]">Blog</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 leading-relaxed">
+
+          {/* Subtitle - Centered */}
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#005A9C]/70 text-center leading-relaxed animate-fade-in-up-delay">
             Stay updated with our latest news, success stories, and impactful articles 
             about our welfare activities and community initiatives.
           </p>
-        </div>
 
-        {/* Wave */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto" preserveAspectRatio="none">
-            <path d="M0 120L48 108C96 96 192 72 288 60C384 48 480 48 576 54C672 60 768 72 864 78C960 84 1056 84 1152 78C1248 72 1344 60 1392 54L1440 48V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0Z" fill="rgb(249 250 251)"/>
-          </svg>
+          {/* Stats */}
+          <div className="flex flex-wrap justify-center gap-8 mt-10 animate-fade-in-up-delay">
+            <div className="text-center">
+              <p className="text-3xl font-bold text-[#F4B400]">{blogPosts.length}</p>
+              <p className="text-sm text-[#005A9C]/60">Stories Published</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-[#005A9C]">2000+</p>
+              <p className="text-sm text-[#005A9C]/60">Lives Touched</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-[#F4B400]">50+</p>
+              <p className="text-sm text-[#005A9C]/60">Volunteers Featured</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Gallery Highlights Section */}
-      <section className="bg-gray-50 py-10">
+      <section className="bg-white py-12">
         <div className="container px-4 md:px-6">
-          <div className="flex items-center justify-between mb-8">
+          {/* Section Header - Centered */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-4">
             <div className="flex items-center gap-3">
-              <Sparkles className="h-6 w-6 text-primary" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Gallery Highlights</h2>
+              <div className="p-2 bg-[#F4B400]/10 rounded-xl">
+                <Sparkles className="h-6 w-6 text-[#F4B400]" />
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-[#005A9C]">Gallery Highlights</h2>
+                <p className="text-sm text-[#005A9C]/60">Moments captured from our initiatives</p>
+              </div>
             </div>
-            <span className="text-sm text-muted-foreground">{allGalleryImages.length} Photos</span>
+            <span className="hidden sm:inline-flex items-center gap-2 text-sm text-[#005A9C]/60 bg-[#E5F6FF] px-4 py-2 rounded-full">
+              <span className="w-2 h-2 bg-[#F4B400] rounded-full animate-pulse" />
+              {allGalleryImages.length} Photos
+            </span>
           </div>
           
           {/* Scrollable Gallery Strip */}
@@ -83,20 +101,21 @@ export default function BlogPage() {
                 <div
                   key={index}
                   onClick={() => openLightbox(index)}
-                  className="relative flex-shrink-0 w-48 md:w-64 aspect-[4/3] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer group snap-start"
+                  className="relative flex-shrink-0 w-52 md:w-72 aspect-[4/3] rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg cursor-pointer group snap-start"
+                  style={{ transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
                 >
                   <Image
                     src={item.src}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    sizes="(max-width: 768px) 200px, 256px"
+                    className="object-cover object-center transition-transform duration-300 group-hover:scale-[1.02]"
+                    sizes="(max-width: 768px) 208px, 288px"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#005A9C]/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-[#005A9C]/0 group-hover:bg-[#005A9C]/30 transition-colors flex items-center justify-center">
                     <ZoomIn className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
-                  <div className="absolute bottom-3 left-3 right-3">
+                  <div className="absolute bottom-4 left-4 right-4">
                     <p className="text-white text-sm font-medium line-clamp-1">{item.title}</p>
                     <p className="text-white/70 text-xs">{item.date}</p>
                   </div>
@@ -108,22 +127,24 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section id="blog-posts" className="bg-gradient-to-b from-gray-50 to-white">
-        <div className="container px-4 md:px-6 py-10 md:py-14">
-          {/* Section Header */}
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-primary/5 border border-primary/20 px-4 py-1.5 rounded-full mb-4">
-              <BookOpen className="h-4 w-4 text-primary" />
-              <span className="text-sm font-semibold text-primary">Latest Articles</span>
+      <section id="blog-posts" className="bg-[#E5F6FF]">
+        <div className="container px-4 md:px-6 py-16 md:py-20">
+          {/* Section Header - Centered */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 bg-white border border-[#005A9C]/20 px-4 py-2 rounded-full mb-4 shadow-sm">
+              <BookOpen className="h-4 w-4 text-[#005A9C]" />
+              <span className="text-sm font-semibold text-[#005A9C]">Latest Articles</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Stories from the Field</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#005A9C] text-center mb-4">
+              Stories from the <span className="text-[#F4B400]">Field</span>
+            </h2>
+            <p className="text-[#005A9C]/70 max-w-2xl mx-auto text-lg text-center">
               Discover stories of hope, impact, and transformation from our ongoing welfare programs
             </p>
           </div>
 
           {/* Blog Grid */}
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
             {blogPosts.map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}
@@ -131,33 +152,38 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="bg-gradient-to-br from-primary/5 via-orange-50 to-yellow-50 py-10">
+      {/* Newsletter / CTA Section */}
+      <section className="bg-white py-16 md:py-20">
         <div className="container px-4 md:px-6">
-          <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary/10 to-orange-500/10 rounded-full blur-3xl" />
+          <div className="max-w-4xl mx-auto bg-[#E5F6FF] rounded-3xl shadow-lg p-8 md:p-14 relative overflow-hidden border border-[#005A9C]/10">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#F4B400]/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#005A9C]/10 rounded-full blur-2xl" />
             
             <div className="relative z-10 text-center space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                Stay Connected
+              <div className="w-16 h-16 mx-auto bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                <Heart className="h-8 w-8 text-[#F4B400]" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#005A9C] text-center">
+                Stay <span className="text-[#F4B400]">Connected</span>
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-[#005A9C]/70 text-lg max-w-xl mx-auto text-center">
                 Follow our journey and be the first to know about our latest initiatives, 
                 success stories, and ways to get involved.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+                <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-primary/80 text-white hover:shadow-lg transition-all"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold bg-[#F4B400] text-[#005A9C] hover:bg-[#005A9C] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Contact Us
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/get-involved"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold bg-[#005A9C] text-white hover:bg-[#F4B400] hover:text-[#005A9C] transition-all duration-300 shadow-md hover:shadow-lg"
                 >
+                  <Users className="h-4 w-4 mr-2" />
                   Get Involved
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -166,34 +192,32 @@ export default function BlogPage() {
 
       {/* Lightbox Modal */}
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-6xl p-0 rounded-3xl border-0 bg-black/95 backdrop-blur-xl">
-          {/* REQUIRED FOR ACCESSIBILITY */}
+        <DialogContent className="max-w-6xl p-0 rounded-2xl border-0 bg-white shadow-2xl">
           <DialogTitle className="sr-only">Gallery Image View</DialogTitle>
-          {/* Navigation */}
+          
           <button 
             onClick={prevImage}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full backdrop-blur-md transition-all z-20"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#005A9C] hover:bg-[#F4B400] text-white hover:text-[#005A9C] p-3 rounded-full transition-all z-20"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button 
             onClick={nextImage}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full backdrop-blur-md transition-all z-20"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-[#005A9C] hover:bg-[#F4B400] text-white hover:text-[#005A9C] p-3 rounded-full transition-all z-20"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
 
-          {/* Counter */}
-          <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-white text-sm px-4 py-2 rounded-full z-20">
+          <div className="absolute top-4 left-4 bg-[#005A9C] text-white text-sm px-4 py-2 rounded-full z-20">
             {lightboxIndex + 1} / {allGalleryImages.length}
           </div>
 
-          <DialogClose className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 rounded-full p-3 z-20 transition-colors">
-            <X className="h-5 w-5 text-white" />
+          <DialogClose className="absolute top-4 right-4 bg-[#005A9C] hover:bg-[#F4B400] text-white hover:text-[#005A9C] rounded-full p-3 z-20 transition-colors">
+            <X className="h-5 w-5" />
           </DialogClose>
 
           {selectedImage && (
-            <div className="relative w-full h-[85vh]">
+            <div className="relative w-full h-[85vh] bg-[#E5F6FF] flex items-center justify-center">
               <Image
                 src={allGalleryImages[lightboxIndex].src}
                 alt={allGalleryImages[lightboxIndex].title}
@@ -201,10 +225,9 @@ export default function BlogPage() {
                 className="object-contain p-4"
                 sizes="(max-width: 768px) 100vw, 1200px"
               />
-              {/* Caption */}
-              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md text-white px-6 py-3 rounded-xl text-center">
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white text-[#005A9C] px-6 py-3 rounded-xl text-center shadow-lg">
                 <p className="font-medium">{allGalleryImages[lightboxIndex].title}</p>
-                <p className="text-sm text-white/70">{allGalleryImages[lightboxIndex].date}</p>
+                <p className="text-sm text-[#005A9C]/70">{allGalleryImages[lightboxIndex].date}</p>
               </div>
             </div>
           )}

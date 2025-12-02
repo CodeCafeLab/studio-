@@ -3,7 +3,7 @@ export const NAV_LINKS = [
   { href: '/projects', label: 'Projects' },
   { href: '/events', label: 'Events' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/get-involved', label: 'Get Involved' },
+  { href: '/get-involved', label: 'Join Us' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
 ];
