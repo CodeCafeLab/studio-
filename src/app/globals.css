@@ -2,49 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* HR Approved Brand Colors - Logo Palette Only */
+:root {
+  --primary-blue: #005A9C;
+  --light-blue: #E5F6FF;
+  --yellow-gold: #F4B400;
+  --white: #FFFFFF;
+  
+  /* Legacy OJASH colors mapped to new palette */
+  --ojash-orange: #F4B400;
+  --ojash-yellow: #F4B400;
+  --ojash-blue: #005A9C;
+  --ojash-white: #FFFFFF;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    --foreground: 207 100% 20%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card-foreground: 207 100% 20%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-    --primary: 200 100% 35%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 31 100% 48%;
-    --accent-foreground: 0 0% 100%;
+    --popover-foreground: 207 100% 20%;
+    --primary: 207 100% 31%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 100% 95%;
+    --secondary-foreground: 207 100% 20%;
+    --muted: 200 100% 95%;
+    --muted-foreground: 207 50% 40%;
+    --accent: 45 100% 48%;
+    --accent-foreground: 207 100% 20%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 200 100% 35%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 50% 90%;
+    --input: 200 50% 90%;
+    --ring: 207 100% 31%;
     --radius: 0.5rem;
-  }
-  .dark {
-    --background: 222.2 47.4% 11.2%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 47.4% 11.2%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 47.4% 11.2%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 200 100% 35%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 31 100% 48%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 200 100% 35%;
   }
 }
 
@@ -53,24 +46,318 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-[#005A9C];
   }
   section {
-    @apply w-full py-8 md:py-12 lg:py-16;
+    @apply w-full py-12 md:py-16 lg:py-20;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline font-bold;
+    @apply font-headline font-bold text-[#005A9C];
   }
   h1 {
-    @apply text-3xl md:text-4xl;
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
   h2 {
-    @apply text-2xl md:text-3xl;
+    @apply text-2xl md:text-3xl lg:text-4xl;
   }
   h3 {
     @apply text-xl md:text-2xl;
   }
   p {
-    @apply text-base md:text-lg;
+    @apply text-base md:text-lg text-[#005A9C]/80;
   }
+}
+
+/* ============================================
+   HR APPROVED UTILITY CLASSES
+   ============================================ */
+@layer utilities {
+  /* Light Background Options */
+  .bg-light-blue {
+    background-color: #E5F6FF;
+  }
+  
+  .bg-white-pure {
+    background-color: #FFFFFF;
+  }
+
+  /* Primary Button Style */
+  .btn-primary {
+    @apply bg-[#005A9C] text-white font-semibold px-6 py-3 rounded-xl;
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[#F4B400] text-[#005A9C];
+    box-shadow: 0 8px 20px rgba(244, 180, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Yellow Accent Button */
+  .btn-accent {
+    @apply bg-[#F4B400] text-[#005A9C] font-bold px-6 py-3 rounded-xl;
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .btn-accent:hover {
+    @apply bg-[#005A9C] text-white;
+    box-shadow: 0 8px 20px rgba(0, 90, 156, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Centered Heading */
+  .heading-centered {
+    @apply text-center w-full text-[#005A9C] font-bold;
+  }
+
+  /* Image Card with Hover */
+  .image-card {
+    @apply relative overflow-hidden rounded-2xl;
+    @apply flex items-center justify-center;
+  }
+  
+  .image-card img {
+    @apply w-full h-full object-cover object-center;
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .image-card:hover img {
+    transform: scale(1.02);
+  }
+  
+  .image-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 90, 156, 0.15);
+  }
+
+  /* Card Hover Effect */
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 90, 156, 0.15);
+  }
+
+  /* Section with Light Blue Background */
+  .section-light {
+    @apply bg-[#E5F6FF];
+  }
+
+  /* Section with White Background */
+  .section-white {
+    @apply bg-white;
+  }
+
+  /* Gradient Text - Blue to Yellow */
+  .gradient-text {
+    background: linear-gradient(135deg, #005A9C 0%, #F4B400 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Badge Styles */
+  .badge-primary {
+    @apply inline-flex items-center gap-2 bg-[#E5F6FF] border border-[#005A9C]/20 px-4 py-2 rounded-full;
+    @apply text-sm font-semibold text-[#005A9C];
+  }
+  
+  .badge-accent {
+    @apply inline-flex items-center gap-2 bg-[#F4B400]/10 border border-[#F4B400]/30 px-4 py-2 rounded-full;
+    @apply text-sm font-semibold text-[#005A9C];
+  }
+
+  /* Hero Section - Light Theme */
+  .hero-light {
+    @apply bg-gradient-to-b from-[#E5F6FF] to-white;
+  }
+
+  /* Card with Border */
+  .card-bordered {
+    @apply bg-white rounded-2xl shadow-md border border-[#E5F6FF];
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .card-bordered:hover {
+    @apply shadow-lg border-[#005A9C]/20;
+    transform: translateY(-2px);
+  }
+
+  /* Consistent Spacing */
+  .section-spacing {
+    @apply py-16 md:py-20 lg:py-24 px-4 md:px-6;
+  }
+
+  /* Legacy compatibility - redirect to new colors */
+  .gradient-text-ojash {
+    background: linear-gradient(135deg, #F4B400 0%, #005A9C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border-ojash {
+    position: relative;
+    background: white;
+    border-radius: 1rem;
+  }
+  
+  .gradient-border-ojash::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #F4B400, #005A9C);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .btn-gradient-hover {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: #005A9C;
+    color: white;
+  }
+  
+  .btn-gradient-hover:hover {
+    @apply scale-105;
+    background: #F4B400;
+    color: #005A9C;
+    box-shadow: 0 8px 20px rgba(244, 180, 0, 0.4);
+  }
+
+  .btn-donate-hover {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: #F4B400;
+    color: #005A9C;
+  }
+
+  .btn-donate-hover:hover {
+    @apply scale-105;
+    background: #005A9C;
+    color: white;
+    box-shadow: 0 8px 30px rgba(0, 90, 156, 0.4);
+  }
+
+  .card-hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .card-hover-lift:hover {
+    @apply -translate-y-2;
+    box-shadow: 0 12px 24px rgba(0, 90, 156, 0.12);
+  }
+
+  .img-zoom {
+    @apply transition-transform duration-300 ease-out;
+  }
+  
+  .img-zoom:hover {
+    transform: scale(1.02);
+  }
+
+  .bg-gradient-ojash {
+    background: linear-gradient(135deg, #E5F6FF 0%, #FFFFFF 100%);
+  }
+
+  .bg-gradient-ojash-soft {
+    background: linear-gradient(180deg, #E5F6FF 0%, #FFFFFF 100%);
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out 0.3s forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-up-delay {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scrollbar styling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
