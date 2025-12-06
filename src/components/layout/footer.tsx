@@ -39,6 +39,7 @@ export function Footer() {
                 href={SOCIAL_LINKS.facebook} 
                 aria-label="Facebook" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 className="p-2.5 bg-white/10 rounded-full hover:bg-[#F4B400] transition-colors duration-300"
               >
                 <Facebook className="h-4 w-4" />
@@ -47,6 +48,7 @@ export function Footer() {
                 href={SOCIAL_LINKS.instagram} 
                 aria-label="Instagram" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 className="p-2.5 bg-white/10 rounded-full hover:bg-[#F4B400] transition-colors duration-300"
               >
                 <Instagram className="h-4 w-4" />
@@ -55,6 +57,7 @@ export function Footer() {
                 href={SOCIAL_LINKS.youtube} 
                 aria-label="YouTube" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 className="p-2.5 bg-white/10 rounded-full hover:bg-[#F4B400] transition-colors duration-300"
               >
                 <Youtube className="h-4 w-4" />
@@ -63,6 +66,7 @@ export function Footer() {
                 href={SOCIAL_LINKS.twitter} 
                 aria-label="Twitter" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 className="p-2.5 bg-white/10 rounded-full hover:bg-[#F4B400] transition-colors duration-300"
               >
                 <Twitter className="h-4 w-4" />
@@ -117,24 +121,24 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-bold text-lg text-[#F4B400]">Contact Us</h4>
             <address className="not-italic text-sm space-y-3">
-              <div className="flex items-start gap-3 text-white/80">
+              <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-1 text-[#F4B400] flex-shrink-0" />
-                <p>Greta Bhagwan Shiv Colony, Gudha Road, Bandikui, Dausa, Rajasthan</p>
+                <p className="text-white/80 text-sm">Greta Bhagwan Shiv Colony, Gudha Road, Bandikui, Dausa, Rajasthan</p>
               </div>
-              <div className="flex items-center gap-3 text-white/80">
+              <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-[#F4B400] flex-shrink-0" />
                 <a 
                   href="mailto:ojashwelfaresociety@gmail.com" 
-                  className="hover:text-[#F4B400] transition-colors duration-300"
+                  className="text-white/80 text-sm hover:text-[#F4B400] transition-colors duration-300"
                 >
                   ojashwelfaresociety@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-3 text-white/80">
+              <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-[#F4B400] flex-shrink-0" />
                 <a 
                   href="tel:+919680404555" 
-                  className="hover:text-[#F4B400] transition-colors duration-300"
+                  className="text-white/80 text-sm hover:text-[#F4B400] transition-colors duration-300"
                 >
                   +91 96804 04555
                 </a>

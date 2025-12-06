@@ -8,6 +8,14 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'OJASH WELFARE Digital Uplift',
   description: 'हर हाथ, एक नई उम्मीद | Every Hand, A New Hope',
+  icons: {
+    icon: [
+      {
+        url: '/images/favicon.jpg?v=3',
+        type: 'image/jpeg',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -17,14 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased'

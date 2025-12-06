@@ -9,8 +9,8 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = {
-  facebook: 'https://facebook.com',
-  instagram: 'https://instagram.com',
+  facebook: 'https://www.facebook.com/profile.php?id=61584364337675',
+  instagram: 'https://www.instagram.com/ojashwelfaresociety/',
   youtube: 'https://youtube.com',
   twitter: 'https://twitter.com',
 };
